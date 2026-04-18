@@ -86,7 +86,11 @@
           <p class="form-intro"><strong>Free location review</strong></p>
           <p class="form-helper">No obligation. If the location is not a fit, we will tell you plainly.</p>
           <p class="form-helper">You will hear back from Olu directly.</p>
-          <form class="lead-form" id="lead-form">
+          <form class="lead-form" id="lead-form" action="https://formspree.io/f/xwvabqed" method="POST" accept-charset="UTF-8">
+            <input type="hidden" name="_subject" value="New Blue Pearl location review request">
+            <input type="hidden" name="_format" value="plain">
+            <!-- Honeypot anti-spam field; leave blank, hidden from users -->
+            <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
             <label for="contact-name">
               Your name
               <input id="contact-name" type="text" name="name" autocomplete="name" required>
@@ -105,7 +109,7 @@
             </label>
             <label for="contact-location-type">
               Location type
-              <select id="contact-location-type" name="locationType" required>
+              <select id="contact-location-type" name="location_type" required>
                 <option value="">Select one</option>
                 <option>Warehouse or industrial</option>
                 <option>Office</option>
@@ -122,14 +126,14 @@
             </label>
             <label for="contact-traffic">
               Approximate users or daily traffic
-              <input id="contact-traffic" type="text" name="traffic" placeholder="Example: 85 employees or 140 residents">
+              <input id="contact-traffic" type="text" name="estimated_users" placeholder="Example: 85 employees or 140 residents">
             </label>
             <label class="field-full" for="contact-notes">
               Notes
               <textarea id="contact-notes" name="notes" rows="5" placeholder="Tell us about the location, hours, existing setup, or what you want to improve."></textarea>
             </label>
             <button class="button button-primary button-full" type="submit">Send location review request</button>
-            <p class="form-note" id="form-note">This opens your email app with the details filled in. Required fields help us review the location faster.</p>
+            <p class="form-note" id="form-note">Submissions go straight to Olu's inbox. No mail app required.</p>
           </form>
         </div>
       </section>
