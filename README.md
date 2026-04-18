@@ -1,10 +1,15 @@
 # Blue Pearl Vending Website
 
-Static marketing site for Blue Pearl Vending.
+Static marketing site for Blue Pearl Vending Solutions LLC.
 
 ## Files
 
-- `index.html` - landing page
+- `index.html` - homepage
+- `services.html` - service overview
+- `locations-we-serve.html` - location and service area page
+- `about.html` - local positioning and company overview
+- `faqs.html` - FAQ page
+- `contact.html` - contact and lead form page
 - `styles.css` - site styles
 - `script.js` - small UI interactions
 - `blue-pearl-logo-clean.png` - web-ready logo

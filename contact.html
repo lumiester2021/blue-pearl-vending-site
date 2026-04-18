@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a2540">
+  <title>Contact | Blue Pearl Vending Solutions LLC</title>
+  <meta name="description" content="Contact Blue Pearl Vending Solutions LLC for a vending machine location review in Hampton Roads, Virginia.">
+  <link rel="canonical" href="https://bluepearlvending.com/contact.html">
+  <link rel="icon" type="image/png" href="blue-pearl-logo-clean.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Blue Pearl Vending Solutions LLC">
+  <meta property="og:title" content="Contact | Blue Pearl Vending Solutions LLC">
+  <meta property="og:description" content="Request a vending machine location review for your Hampton Roads property or workplace.">
+  <meta property="og:url" content="https://bluepearlvending.com/contact.html">
+  <meta property="og:image" content="https://bluepearlvending.com/machine-lobby.png">
+  <meta property="og:image:alt" content="Blue Pearl Vending machine in a lobby">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact | Blue Pearl Vending Solutions LLC">
+  <meta name="twitter:description" content="Request a free vending location review in Hampton Roads.">
+  <meta name="twitter:image" content="https://bluepearlvending.com/machine-lobby.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Blue Pearl Vending Solutions LLC home">
+        <img class="brand-logo" src="blue-pearl-logo-clean.png" alt="Blue Pearl Vending Solutions LLC logo">
+        <span class="brand-text">
+          <strong>Blue Pearl Vending Solutions LLC</strong>
+          <span>Local vending service for Hampton Roads properties and workplaces</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="locations-we-serve.html">Locations We Serve</a>
+        <a href="about.html">About</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-card">
+          <p class="eyebrow">Contact</p>
+          <h1>Request a location review for your property or workplace.</h1>
+          <p>
+            Share the basics about your site and Blue Pearl can quickly evaluate whether it is a strong fit
+            for vending service. The more specific the details, the easier it is to recommend the right setup.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="contact-copy">
+          <p class="eyebrow">Talk to Blue Pearl</p>
+          <h2>Direct local contact for Hampton Roads placements.</h2>
+          <p>Reach out by phone or email, or use the form to send the details of your location.</p>
+          <div class="contact-points">
+            <article>
+              <strong>Phone</strong>
+              <a href="tel:+17572510652">(757) 251-0652</a>
+            </article>
+            <article>
+              <strong>Email</strong>
+              <a href="mailto:olu@bluepearlvending.com">olu@bluepearlvending.com</a>
+            </article>
+            <article>
+              <strong>Service area</strong>
+              <span>Norfolk, Virginia Beach, Chesapeake, Portsmouth, Suffolk, Newport News, and Hampton</span>
+            </article>
+          </div>
+        </div>
+        <div class="contact-card">
+          <p class="form-intro"><strong>Free location review</strong></p>
+          <form class="lead-form" id="lead-form">
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              Company or property
+              <input type="text" name="company" autocomplete="organization">
+            </label>
+            <label>
+              Location type
+              <select name="locationType" required>
+                <option value="">Select one</option>
+                <option>Warehouse or industrial</option>
+                <option>Office</option>
+                <option>Apartment community</option>
+                <option>Coworking space</option>
+                <option>Gym or fitness facility</option>
+                <option>Commercial property</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
+              City
+              <input type="text" name="city" autocomplete="address-level2" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label>
+              Estimated users or traffic
+              <input type="text" name="traffic" placeholder="Example: 85 employees or 140 residents">
+            </label>
+            <label class="field-full">
+              Notes
+              <textarea name="notes" rows="5" placeholder="Tell us about the location, hours, existing setup, or what you want to improve."></textarea>
+            </label>
+            <button class="button button-primary button-full" type="submit">Send location review request</button>
+            <p class="form-note" id="form-note">This opens your email app with the details filled in.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Blue Pearl Vending Solutions LLC. All rights reserved.</p>
+      <p>Virginia Beach, VA · Serving Hampton Roads.</p>
+    </footer>
+  </div>
+
+  <div class="mobile-cta">
+    <a class="button button-secondary" href="tel:+17572510652">Call Blue Pearl</a>
+    <a class="button button-primary" href="#lead-form">Get Location Review</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
