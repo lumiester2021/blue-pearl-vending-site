@@ -52,6 +52,7 @@
     <main>
       <section class="page-hero">
         <div class="page-hero-card">
+          <!-- TODO: add real owner photo when provided -->
           <p class="eyebrow">Contact</p>
           <h1>Request a location review for your property or workplace.</h1>
           <p>
@@ -83,18 +84,28 @@
         </div>
         <div class="contact-card">
           <p class="form-intro"><strong>Free location review</strong></p>
+          <p class="form-helper">No obligation. If the location is not a fit, we will tell you plainly.</p>
+          <p class="form-helper">You will hear back from Olu directly.</p>
           <form class="lead-form" id="lead-form">
-            <label>
-              Name
-              <input type="text" name="name" autocomplete="name" required>
+            <label for="contact-name">
+              Your name
+              <input id="contact-name" type="text" name="name" autocomplete="name" required>
             </label>
-            <label>
-              Company or property
-              <input type="text" name="company" autocomplete="organization">
+            <label for="contact-email">
+              Email
+              <input id="contact-email" type="email" name="email" autocomplete="email" required>
             </label>
-            <label>
+            <label for="contact-phone">
+              Phone
+              <input id="contact-phone" type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label for="contact-company">
+              Company or property name
+              <input id="contact-company" type="text" name="company" autocomplete="organization">
+            </label>
+            <label for="contact-location-type">
               Location type
-              <select name="locationType" required>
+              <select id="contact-location-type" name="locationType" required>
                 <option value="">Select one</option>
                 <option>Warehouse or industrial</option>
                 <option>Office</option>
@@ -105,31 +116,26 @@
                 <option>Other</option>
               </select>
             </label>
-            <label>
-              City
-              <input type="text" name="city" autocomplete="address-level2" required>
+            <label for="contact-city">
+              Location city
+              <input id="contact-city" type="text" name="city" autocomplete="address-level2" required placeholder="Virginia Beach, Norfolk, Chesapeake, Hampton...">
             </label>
-            <label>
-              Email
-              <input type="email" name="email" autocomplete="email" required>
+            <label for="contact-traffic">
+              Approximate users or daily traffic
+              <input id="contact-traffic" type="text" name="traffic" placeholder="Example: 85 employees or 140 residents">
             </label>
-            <label>
-              Phone
-              <input type="tel" name="phone" autocomplete="tel">
-            </label>
-            <label>
-              Estimated users or traffic
-              <input type="text" name="traffic" placeholder="Example: 85 employees or 140 residents">
-            </label>
-            <label class="field-full">
+            <label class="field-full" for="contact-notes">
               Notes
-              <textarea name="notes" rows="5" placeholder="Tell us about the location, hours, existing setup, or what you want to improve."></textarea>
+              <textarea id="contact-notes" name="notes" rows="5" placeholder="Tell us about the location, hours, existing setup, or what you want to improve."></textarea>
             </label>
             <button class="button button-primary button-full" type="submit">Send location review request</button>
-            <p class="form-note" id="form-note">This opens your email app with the details filled in.</p>
+            <p class="form-note" id="form-note">This opens your email app with the details filled in. Required fields help us review the location faster.</p>
           </form>
         </div>
       </section>
+
+      <!-- TODO: add real testimonial from an approved customer -->
+      <!-- TODO: add approved customer logos only after written approval -->
     </main>
 
     <footer class="site-footer">
