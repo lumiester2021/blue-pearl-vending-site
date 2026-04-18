@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lumiester2021.github.io/blue-pearl-vending-site/sitemap.xml
