@@ -90,6 +90,52 @@ leadForms.forEach((form) => {
   });
 });
 
+leadForms.forEach((form) => {
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const submitButton = form.querySelector('button[type="submit"]');
+    const formNote = form.querySelector(".form-note");
+    const nextUrl = form.querySelector('input[name="_next"]')?.value || "/thank-you.html";
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Submitting...";
+    }
+
+    if (formNote) {
+      formNote.textContent = "Submitting your request...";
+    }
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`Form submission failed with status ${response.status}`);
+      }
+
+      window.location.assign(nextUrl);
+    } catch (error) {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Request My Free Vending Review";
+      }
+
+      if (formNote) {
+        formNote.textContent = "There was a problem submitting your request. Please call or email Blue Pearl directly.";
+      }
+
+      console.error(error);
+    }
+  });
+});
+
 const query = new URLSearchParams(window.location.search);
 const pathname = window.location.pathname;
 
