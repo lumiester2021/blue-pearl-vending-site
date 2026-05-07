@@ -10,6 +10,8 @@ Static marketing site for Blue Pearl Vending Solutions LLC.
 - `about.html` - local positioning and company overview
 - `faqs.html` - FAQ page
 - `contact.html` - contact and lead form page
+- `quote.html` - QR-ready vending review landing page
+- `thank-you.html` - post-submit confirmation page
 - `styles.css` - site styles
 - `script.js` - small UI interactions
 - `blue-pearl-logo-clean.png` - web-ready logo
@@ -24,3 +26,9 @@ Static marketing site for Blue Pearl Vending Solutions LLC.
 4. Under `Build and deployment`, choose `Deploy from a branch`.
 5. Select the `main` branch and `/ (root)`.
 6. Save. GitHub will publish the site.
+
+## QR Campaign Links
+
+- Business cards: `https://bluepearlvending.com/quote.html?utm_source=qr&utm_medium=print&utm_campaign=business_card`
+- Flyers: `https://bluepearlvending.com/quote.html?utm_source=qr&utm_medium=print&utm_campaign=flyer`
+- Proposals: `https://bluepearlvending.com/quote.html?utm_source=qr&utm_medium=proposal&utm_campaign=site_visit`
